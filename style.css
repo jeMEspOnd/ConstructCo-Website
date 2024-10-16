@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    /* Changed font to Open Sans */
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(51, 51, 51, 0.9);
+    padding: 10px 0;
+    z-index: 100;
+}
+
+/* Navbar styling */
+/* Style for individual nav items */
+.navbar-nav .nav-item {
+    margin-left: 20px;
+    /* Add space between nav items */
+}
+
+/* Link inside nav item */
+.navbar-nav .nav-item .nav-link {
+    color: #f8f9fa;
+    /* Default text color */
+    padding: 8px 15px;
+    /* Add padding for spacing around text */
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+/* Hover state for nav-link */
+.navbar-nav .nav-item .nav-link:hover {
+    color: #1e90ff;
+    /* Change text color on hover */
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Optional background effect */
+    border-radius: 5px;
+    /* Optional rounded corners */
+}
+
+/* Active nav item */
+.navbar-nav .nav-item .nav-link.active {
+    color: #1e90ff;
+    /* Active link color */
+    font-weight: bold;
+    /* Bold the active link */
+}
+
+
+
+/*End Nav*/
+.hero {
+    background-image: linear-gradient(to bottom, #ff9800, #fff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    /* Fixed space here */
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background: #ff9800;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #e68a00;
+}
+
+/* About Us Section */
+.about {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-content {
+    max-width: 600px;
+    text-align: left;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.about a.btn {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    background-color: #ff9800;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.about a.btn:hover {
+    background-color: #e68a00;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Services Section */
+.services {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.service-item i {
+    font-size: 40px;
+    color: #ff9800;
+    margin-bottom: 15px;
+}
+
+.service-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px;
+    background: #ff9800;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* Fade In Animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn ease 3s;
+    animation-fill-mode: forwards;
+}
+
+.delay-1 {
+    animation-delay: 1s;
+}
+
+.delay-2 {
+    animation-delay: 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*CTA*/
+.cta {
+    background-color: #ff9800;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.testimonials {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.testimonial-content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    max-width: 400px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.testimonial h4 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero {
+        height: 50vh;
+    }
+
+
+    .service-item {
+        width: 100%;
+        /* Ensure service items take full width */
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .service-item {
+        width: 50%;
+        /* Adjust width for larger screens */
+    }
+}
